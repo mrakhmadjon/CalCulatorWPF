@@ -13,7 +13,7 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
-                <Label Margin="20 35 20 0"  Background="#DCDCDC" />
+                <TextBlock Name="inp" Margin="20 35 20 0"  Background="#DCDCDC" TextAlignment="Right" FontSize="32"/>
             </Grid>
             
             <Grid Grid.Row="1" Margin="15">
@@ -31,30 +31,30 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
 
-                <Button Cursor="Hand" FontSize="30" Grid.Column="0" Grid.Row="0" Content="C" Margin="5" Foreground="White" Background="Red"/>
-                <Button Cursor="Hand" FontSize="30" Grid.Column="1" Grid.Row="0" Content = "Del" Margin="5" Foreground="White" Background="Red"/>
-                <Button Cursor="Hand" FontSize="30" Grid.Column="2" Grid.Row="0" Content = "Sqrt" Margin="5" Foreground="White" Background="#4681B3"/>
-                <Button Cursor="Hand" FontSize="30" Grid.Column="3" Grid.Row="0" Content = "sqr" Margin="5" Foreground="White" Background="#4681B3"/>
-                        
-                <Button Cursor="Hand" FontSize="30" Grid.Column="0" Grid.Row="1" Margin = "5" Content="7"  />
-                <Button Cursor="Hand" FontSize="30" Grid.Column="1" Grid.Row="1" Margin = "5" Content = "8"/>
-                <Button Cursor="Hand" FontSize="30" Grid.Column="2" Grid.Row="1" Margin = "5" Content = "9"/>
-                <Button Cursor="Hand" FontSize="30" Grid.Column="3" Grid.Row="1" Margin = "5" Content = "x" Foreground="White" Background="#4681B3"/>
-                                                 
-                <Button Cursor="Hand" FontSize="30" Grid.Column="0" Grid.Row="2" Margin = "5" Content="4"/>
-                <Button Cursor="Hand" FontSize="30" Grid.Column="1" Grid.Row="2" Margin = "5" Content = "5"/>
-                <Button Cursor="Hand" FontSize="30" Grid.Column="2" Grid.Row="2" Margin = "5" Content = "6"/>
-                <Button Cursor="Hand" FontSize="30" Grid.Column="3" Grid.Row="2" Margin = "5" Content = "/" Foreground="White" Background="#4681B3"/>
-                                                   
-                <Button Cursor="Hand" FontSize="30" Grid.Column="0" Grid.Row="3" Margin = "5" Content="1"/>
-                <Button Cursor="Hand" FontSize="30" Grid.Column="1" Grid.Row="3" Margin = "5" Content = "2"/>
-                <Button Cursor="Hand" FontSize="30" Grid.Column="2" Grid.Row="3" Margin = "5" Content = "3"/>
-                <Button Cursor="Hand" FontSize="30" Grid.Column="3" Grid.Row="3" Margin = "5" Content = "-" Foreground="White" Background="#4681B3"/>
-                                                    
-                <Button FontSize="30" Grid.Column="0" Grid.Row="4" Margin = "5" Content="0"/>
-                <Button FontSize="30" Grid.Column="1" Grid.Row="4" Margin = "5" Content = "." Background="#4681B3" Foreground="White" />
-                <Button FontSize="30" Grid.Column="2" Grid.Row="4" Margin = "5" Content = "=" Background="#4681B3" Foreground="White" />
-                <Button FontSize="30" Grid.Column="3" Grid.Row="4" Margin = "5" Content = "+" Background="#4681B3" Foreground="White"/>
+                <Button Click="clear" Cursor="Hand" FontSize="30" Grid.Column="0" Grid.Row="0" Content="C" Margin="5" Foreground="White" Background="Red"/>
+                <Button Click="Dell" Cursor="Hand" FontSize="30" Grid.Column="1" Grid.Row="0" Content = "Del" Margin="5" Foreground="White" Background="Red"/>
+                <Button Click="Sqrt" Cursor="Hand" FontSize="30" Grid.Column="2" Grid.Row="0" Content = "Sqrt" Margin="5" Foreground="White" Background="#4681B3"/>
+                <Button Click="Operation" Cursor="Hand" FontSize="30" Grid.Column="3" Grid.Row="0" Content = "sqr" Margin="5" Foreground="White" Background="#4681B3"/>
+
+                <Button Click="Digit_Click" Cursor="Hand" FontSize="30" Grid.Column="0" Grid.Row="1" Margin = "5" Content="7"  />
+                <Button Click="Digit_Click" Cursor="Hand" FontSize="30" Grid.Column="1" Grid.Row="1" Margin = "5" Content = "8"/>
+                <Button Click="Digit_Click" Cursor="Hand" FontSize="30" Grid.Column="2" Grid.Row="1" Margin = "5" Content = "9"/>
+                <Button Click="Operation"  Cursor="Hand" FontSize="30" Grid.Column="3" Grid.Row="1" Margin = "5" Content = "x"  Foreground="White" Background="#4681B3"/>
+
+                <Button Click="Digit_Click" Cursor="Hand" FontSize="30" Grid.Column="0" Grid.Row="2" Margin = "5" Content="4"/>
+                <Button Click="Digit_Click" Cursor="Hand" FontSize="30" Grid.Column="1" Grid.Row="2" Margin = "5" Content = "5"/>
+                <Button Click="Digit_Click" Cursor="Hand" FontSize="30" Grid.Column="2" Grid.Row="2" Margin = "5" Content = "6"/>
+                <Button Click="Operation" Cursor="Hand" FontSize="30" Grid.Column="3" Grid.Row="2" Margin = "5" Content = "/"  Foreground="White" Background="#4681B3"/>
+
+                <Button Click="Digit_Click" Cursor="Hand" FontSize="30" Grid.Column="0" Grid.Row="3" Margin = "5" Content="1"/>
+                <Button Click="Digit_Click" Cursor="Hand" FontSize="30" Grid.Column="1" Grid.Row="3" Margin = "5" Content = "2"/>
+                <Button Click="Digit_Click" Cursor="Hand" FontSize="30" Grid.Column="2" Grid.Row="3" Margin = "5" Content = "3"/>
+                <Button Click="Operation" Cursor="Hand" FontSize="30" Grid.Column="3" Grid.Row="3" Margin = "5" Content = "-" Foreground="White" Background="#4681B3"/>
+
+                <Button Click="Digit_Click" FontSize="30" Grid.Column="0" Grid.Row="4" Margin = "5" Content="0"/>
+                <Button Click="Point" FontSize="30" Grid.Column="1" Grid.Row="4" Margin = "5" Content = "." Background="#4681B3" Foreground="White" />
+                <Button Click="Equal" FontSize="30" Grid.Column="2" Grid.Row="4" Margin = "5" Content = "=" Background="#4681B3" Foreground="White" />
+                <Button Click="Operation" FontSize="30" Grid.Column="3" Grid.Row="4" Margin = "5" Content = "+" Background="#4681B3" Foreground="White"/>
 
             </Grid>
         </Grid>
